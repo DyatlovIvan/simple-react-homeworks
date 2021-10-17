@@ -1,0 +1,14 @@
+.error {
+    text-align: center;
+}
+
+.numberError {
+    color: red;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.textError {
+    font-size: 50px;
+    font-weight: bold;
+}
