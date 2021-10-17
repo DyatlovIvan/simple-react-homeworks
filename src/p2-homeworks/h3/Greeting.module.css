@@ -5,3 +5,17 @@
 .error {
     border: 1px solid red;
 }
+
+.buttonAdd{
+    background-color: lightgoldenrodyellow ;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.errorTitle{
+    color: red;
+}
+
+.inputArea{
+    margin-left: 10px;
+}

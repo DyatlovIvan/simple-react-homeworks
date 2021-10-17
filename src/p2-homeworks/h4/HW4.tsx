@@ -27,10 +27,10 @@ function HW4() {
             <div className={s.column}>
                 <SuperInputText
                     value={text}
-                    onChangeText={setText}
+                  onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText
