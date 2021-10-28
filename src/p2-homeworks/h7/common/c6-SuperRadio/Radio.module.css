@@ -1,0 +1,19 @@
+.radio{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: lightgoldenrodyellow;
+}
+
+.radio:hover{
+    border: 2px solid black;
+}
+
+.radio:checked{
+    background-color:pink;
+
+}

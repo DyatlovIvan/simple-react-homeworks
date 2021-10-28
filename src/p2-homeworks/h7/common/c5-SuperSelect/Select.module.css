@@ -1,0 +1,34 @@
+
+.select {
+    width: 100px;
+    padding: 3px;
+    margin-left: 5px;
+
+    cursor: pointer;
+    appearance: none;
+    background-color: lightgoldenrodyellow;
+    border: 1px inset black;
+}
+
+.select:focus {
+    border: 2px solid black;
+}
+
+.option {
+    background-color: beige;
+    color: slategrey;
+}
+.option:checked{
+    color: black;
+    background-color: pink;
+}
+
+
+/*.option:hover {*/
+/*    background:#666;*/
+/*}*/
+
+/*.select:focus {*/
+/*    position:relative;*/
+/*    pointer-events:all;*/
+/*}*/
