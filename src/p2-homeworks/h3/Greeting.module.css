@@ -3,7 +3,7 @@
 }
 
 .error {
-    border: 1px solid red;
+    border: 1px solid pink;
 }
 
 .buttonAdd{
@@ -18,4 +18,8 @@
 
 .inputArea{
     margin-left: 10px;
+}
+
+.input{
+    border-radius: 5px;
 }

@@ -27,7 +27,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 
     return (
         <div className={s.inputArea}>
-            <input value={name} onChange={onChangeHandler} className={name===''?inputClass:''}/>
+            <input value={name} onChange={onChangeHandler} className={name===''?inputClass:'' + ' ' + s.input}/>
             <span className={s.errorTitle}>{error}</span>
             <button onClick={onClickHandler} className={s.buttonAdd}>add </button>
             <span>{totalUsers }</span>
