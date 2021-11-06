@@ -1,0 +1,7 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
