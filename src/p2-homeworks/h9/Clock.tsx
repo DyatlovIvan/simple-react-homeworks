@@ -16,7 +16,6 @@ function Clock() {
             setDate(new Date())
             // setDate
         }, 1000)
-        debugger
         setTimerId(id)
     }
 
@@ -28,7 +27,6 @@ function Clock() {
         // close
         setShow(false)
     }
-    debugger
     const stringTime = date?.toLocaleTimeString()||<br/> // fix with date
     const stringDate = date?.toLocaleDateString()||<br/>// fix with date
 
