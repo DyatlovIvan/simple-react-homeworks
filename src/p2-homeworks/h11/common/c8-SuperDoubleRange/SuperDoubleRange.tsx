@@ -1,24 +1,34 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
+// import {Slider} from "antd";
+
+
+
+
 
 type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
+    // onChangeRange?: (value: [number, number]) => void
+    // value?: [number, number]
+    // min:number
+    // max:number
     // min, max, step, disable, ...
 }
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
-        onChangeRange, value,
-        // min, max, step, disable, ...
+       // onChangeRange, value, ...restProps
     }
+        // min, max, step, disable, ...
+
 ) => {
     // сделать самому, можно подключать библиотеки
 
+
     return (
-        <>
-            DoubleRange
-        </>
+       <div>
+           {/*<Slider/>*/}
+       </div>
     )
 }
+
 
 export default SuperDoubleRange

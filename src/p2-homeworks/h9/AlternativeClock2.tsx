@@ -2,9 +2,14 @@ import React, {useEffect, useState} from "react";
 
 export const AlternativeClock2 = React.memo((props) => {
     const [date, setDate] = useState(new Date())
-    console.log('tic')
     useEffect(() => {
-        setInterval(() => setDate(new Date()))
+
+        const Interval = setInterval(() => {
+            console.log('tic')
+            setDate(new Date())
+        },1000)
+
+        return(()=>clearInterval(Interval))
     },[])
 
     const fun = (num:number) => num<10? '0'+num : num

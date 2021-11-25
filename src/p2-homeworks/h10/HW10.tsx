@@ -47,13 +47,6 @@ function HW10() {
                 )
             }
 
-            <hr/>
-            <AlternativeClock/>
-            <hr/>
-            <hr/>
-            <AlternativeClock2/>
-            <hr/>
-
         </div>
     )
 }
