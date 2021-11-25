@@ -4,6 +4,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {initStateType, loadingAC} from "./bll/loadingReducer";
 import s from './HW10.module.css'
+import AlternativeClock from "../h9/AlternativeClock";
+import {AlternativeClock2} from "../h9/AlternativeClock2";
 
 function HW10() {
     // useSelector, useDispatch
@@ -46,9 +48,12 @@ function HW10() {
             }
 
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
+            <AlternativeClock/>
             <hr/>
+            <hr/>
+            <AlternativeClock2/>
+            <hr/>
+
         </div>
     )
 }
