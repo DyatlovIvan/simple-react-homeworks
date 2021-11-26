@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import s from '../h11/common/c8-SuperDoubleRange/SuperDoubleRange.module.css'
+import SuperDoubleRange2 from "./common/c9-SuperDoubleRange/SuperDoubleRange2";
 
 function HW11() {
     const [value1, setValue1] = useState(0)
@@ -14,14 +16,18 @@ function HW11() {
             {/*should work (должно работать)*/}
             <div>
                 <span>{value1}</span>
-                <SuperRange onChangeRange = {setValue1}
+                <SuperRange value={value1}
+                            onChangeRange={setValue1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
 
-            <div>
+            <div className={s.doubleSliderBlock}>
                 <span>{value1}</span>
-                <SuperDoubleRange
+                <SuperDoubleRange min={value1}
+                                  max={value2}
+                                  onChangeRangeMin={setValue1}
+                                  onChangeRangeMax={setValue2}
                     // сделать так чтоб value1 и value2 изменялось
                 />
                 <span>{value2}</span>
@@ -29,8 +35,7 @@ function HW11() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
+            <SuperDoubleRange2 min={1} max={2}/>
             <hr/>
         </div>
     )
