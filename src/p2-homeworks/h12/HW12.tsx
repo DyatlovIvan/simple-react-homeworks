@@ -10,7 +10,7 @@ const themes = ['dark', 'red','blue','some'];
 function HW12() {
 
     // const theme = 'some'; // useSelector
-    const theme = useSelector<AppStoreType,string>(state => state.theme.theme)
+    const theme = useSelector<AppStoreType,string>(state => state.themeSelect.theme)
     const dispatch = useDispatch();
 
 
